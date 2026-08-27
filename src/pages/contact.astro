@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
+---
+<BaseLayout title="Contact" description="Contact information for Shreya Roongta’s learning design portfolio."><header class="page-hero"><div class="shell narrow"><p class="eyebrow">Contact</p><h1>Let’s connect around learning.</h1><p class="lede">I welcome thoughtful conversations about learning design, curriculum, education, and EdTech.</p></div></header><section class="section shell narrow"><div class="contact-panel"><div><h2>Contact details</h2><p>Verified contact information has not been added yet. This space is intentionally reserved until an email address or professional profile is provided.</p></div><div><p class="eyebrow">In the meantime</p><p>You can explore the story behind this portfolio and follow new case studies as they are added.</p><div class="button-row"><a class="button" href={withBase('about/')}>Read my story</a><a class="button secondary" href={withBase('projects/')}>View projects</a></div></div></div></section></BaseLayout>

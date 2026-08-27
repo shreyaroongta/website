@@ -1,0 +1,6 @@
+---
+import { withBase } from '../lib/paths';
+interface Props { slug:string; title:string; summary:string; category?:string }
+const { slug,title,summary,category } = Astro.props;
+---
+<article class="project-card"><div class="project-mark" aria-hidden="true">↗</div>{category && <p class="eyebrow">{category}</p>}<h2><a href={withBase(`projects/${slug}/`)}>{title}</a></h2><p>{summary}</p><a class="text-link" href={withBase(`projects/${slug}/`)} aria-label={`Read the ${title} case study`}>Read case study <span aria-hidden="true">→</span></a></article>

@@ -1,0 +1,1 @@
+{"name":"shreya-roongta-portfolio","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"astro dev","build":"astro check && astro build","preview":"astro preview","check":"astro check"},"dependencies":{"@astrojs/check":"^0.9.6","astro":"^7.2.8","typescript":"^5.9.3","zod":"^4.4.3"}}

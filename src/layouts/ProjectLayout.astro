@@ -1,0 +1,5 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { title,summary,category,course,tools=[],skills=[] } = Astro.props;
+---
+<BaseLayout title={title} description={summary}><article><header class="page-hero project-hero"><div class="shell narrow"><p class="eyebrow">{category || 'Case study'}</p><h1>{title}</h1><p class="lede">{summary}</p>{course && <p class="meta">Course: {course}</p>}</div></header><div class="shell narrow prose project-body"><slot/></div>{(tools.length || skills.length) && <aside class="shell narrow tag-panel" aria-label="Project details">{tools.length > 0 && <div><h2>Tools</h2><p>{tools.join(' · ')}</p></div>}{skills.length > 0 && <div><h2>Skills</h2><p>{skills.join(' · ')}</p></div>}</aside>}</article></BaseLayout>
